@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36616.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Etl.Opiniones", "Etl.Opiniones.csproj", "{DF8FB111-52B8-4E42-9201-774F0B6349D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETL.Opiniones.Application", "..\ETL.Opiniones.Application\ETL.Opiniones.Application.csproj", "{BAEFABAA-91F9-448A-B419-3D588C3D4C81}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F27A9FA0-D1C9-45EA-B1A9-1CDB1064985F} = {F27A9FA0-D1C9-45EA-B1A9-1CDB1064985F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETL.Opiniones.Infrastructure", "..\ETL.Opiniones.Infrastructure\ETL.Opiniones.Infrastructure.csproj", "{DECD828C-D055-4AAA-B6C6-52BD748556AD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BAEFABAA-91F9-448A-B419-3D588C3D4C81} = {BAEFABAA-91F9-448A-B419-3D588C3D4C81}
+		{F27A9FA0-D1C9-45EA-B1A9-1CDB1064985F} = {F27A9FA0-D1C9-45EA-B1A9-1CDB1064985F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETL.Opiniones.Domain", "..\ETL.Opiniones.Domain\ETL.Opiniones.Domain.csproj", "{F27A9FA0-D1C9-45EA-B1A9-1CDB1064985F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EtlOpiniones.Api", "..\EtlOpiniones.Api\EtlOpiniones.Api.csproj", "{3DEA60A8-90B4-4409-B5E1-535B03AD0570}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF8FB111-52B8-4E42-9201-774F0B6349D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF8FB111-52B8-4E42-9201-774F0B6349D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF8FB111-52B8-4E42-9201-774F0B6349D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF8FB111-52B8-4E42-9201-774F0B6349D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAEFABAA-91F9-448A-B419-3D588C3D4C81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAEFABAA-91F9-448A-B419-3D588C3D4C81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAEFABAA-91F9-448A-B419-3D588C3D4C81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAEFABAA-91F9-448A-B419-3D588C3D4C81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DECD828C-D055-4AAA-B6C6-52BD748556AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DECD828C-D055-4AAA-B6C6-52BD748556AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DECD828C-D055-4AAA-B6C6-52BD748556AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DECD828C-D055-4AAA-B6C6-52BD748556AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F27A9FA0-D1C9-45EA-B1A9-1CDB1064985F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F27A9FA0-D1C9-45EA-B1A9-1CDB1064985F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F27A9FA0-D1C9-45EA-B1A9-1CDB1064985F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F27A9FA0-D1C9-45EA-B1A9-1CDB1064985F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DEA60A8-90B4-4409-B5E1-535B03AD0570}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DEA60A8-90B4-4409-B5E1-535B03AD0570}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DEA60A8-90B4-4409-B5E1-535B03AD0570}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DEA60A8-90B4-4409-B5E1-535B03AD0570}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {09771527-3E2A-4ED0-A840-06F6B820146B}
+	EndGlobalSection
+EndGlobal
