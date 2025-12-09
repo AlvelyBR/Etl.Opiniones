@@ -12,5 +12,6 @@ namespace ETL.Opiniones.Application.Interfaces
         Task<IReadOnlyCollection<RawProduct>> GetProductsAsync(CancellationToken cancellationToken);
         Task<IReadOnlyCollection<RawFuenteDatos>> GetFuentesDatosAsync(CancellationToken cancellationToken);
         Task<IReadOnlyCollection<RawClient>> GetClientsAsync(CancellationToken cancellationToken);
+
     }
 }
